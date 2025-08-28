@@ -1,34 +1,75 @@
-# DIO - Project 01 - Bootcamp - Santander 2025 - Back-End com Java
-## DESAFIO CONTA BANCO - TERMINAL
-www.dio.me
+# 📌 Projeto 01 - Conta Banco
 
-## Sintaxe - Desafio
+Desafio do **Bootcamp Santander 2025 - Back-End com Java (DIO)**.  
+O objetivo é exercitar a sintaxe Java criando um programa de terminal que simula a abertura de uma conta bancária.
 
-Vamos exercitar todo o conteúdo apresentado no módulo de Sintaxe codificando o seguinte cenário.
+---
 
-1. Criar o projeto `ContaBanco` que receberá dados via terminal contendo as características de conta em banco conforme atributos abaixo:
-2. Dentro do projeto, criar a classe `ContaTerminal.java` para realizar toda a codificação do nosso programa.
+## 📂 Estrutura do Projeto
 
-###### Revise sobre regras de declaração de variáveis
+Este projeto foi criado com **Maven**, seguindo a convenção de diretórios padrão:
 
-| Atributo  | Tipo     | Exemplo   
-| --------- | ---------| ------- 
-| Numero    | Inteiro  | 1021 
-| Agencia   | Texto    | 067-8
-| Nome Cliente | Texto    | MARIO ANDRADE
-| Saldo | Decimal |237.48
+project01-conta-banco
+
+    │── src
+    │ └── main
+    │ └── java
+    │ └── org
+    │ └── yourcompany
+    │ └── yourproject
+    │ └── ContaTerminal.java # Classe principal do 
+    programa
+    │
+    │── test/ # Testes automatizados (não utilizados neste desafio)
+    │── pom.xml # Configuração do Maven
+    │── README.md # Documentação do projeto
 
 
-###### Revise sobre terminal, main args e a classe Scanner
-2. Permita que os dados sejam inseridos via terminal sendo que o usuário receberá a mensagem de qual informação será solicitada, exemplo:
+---
 
-* Programa: "Por favor, digite o número da Agência !"
-* Usuário: 1021 *(depois ENTER para o próximo campo)* 
+## ▶️ Como Executar
 
-###### Revise sobre concatenação e classe String com método concat
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/jhonatan-goncalves-pereira/Bootcamp-DIO-Santander2025-Back-End-com-Java.git
+Entre na pasta do projeto:
 
-3. Depois de todas as informações terem sido inseridas, o sistema deverá exibir a seguinte mensagem:
+    ```cd project01-conta-banco
 
-*"Olá [Nome Cliente], obrigado por criar uma conta em nosso banco, sua agência é [Agencia], conta [Numero] e seu saldo [Saldo] já está disponível para saque".*
+Compile o projeto com Maven:
 
-Os campos em [ ] devem ser alterados pelas informações que forem inseridas pelos usuários.
+    ```mvn clean install
+
+
+Execute a classe principal:
+
+    mvn exec:java -Dexec.mainClass="org.yourcompany.yourproject.ContaTerminal"
+
+## 🖥️ Exemplo de Execução
+    Por favor, digite o número da Conta: 1021
+    Por favor, digite o número da Agência: 067-8
+    Por favor, digite o nome do Cliente: MARIO ANDRADE
+    Por favor, digite o saldo inicial: 237.48
+
+
+Saída:
+
+    Olá MARIO ANDRADE, obrigado por criar uma conta em nosso banco,
+    sua agência é 067-8, conta 1021 e seu saldo R$ 237,48 já está disponível para saque.
+
+## 🛠️ Tecnologias Utilizadas
+
+Java 17+
+
+Maven 3.8+
+
+Scanner (entrada de dados via terminal)
+
+## 📖 Autor
+
+👤 [Jhonatan Gonçalves Pereira](https://www.linkedin.com/in/jhonatan-goncalves-pereira/)
+Projeto desenvolvido como parte do bootcamp DIO + Santander Back-End com Java 2025.
+
+
+---
+
